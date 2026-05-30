@@ -1,0 +1,8 @@
+# Archivos temporales de extracción de datos
+_*.json
+_*.cfg
+_*.py
+
+# OS
+.DS_Store
+Thumbs.db
