@@ -1,126 +1,158 @@
-# Diario del proyecto — Cronología
+# Diario del proyecto
 
-> De una impresora 500×500mm a 1000×1000×1000mm.
-
----
-
-## Fase 1 — Primeros pasos (Abril 2026)
-
-### Semana 1 — Componentes y primer montaje
-
-**8 de abril** — Llegan los primeros componentes: CR Touch (ALT04) y drivers.  
-📷 *Fotos del CR Touch con su cable de 5 colores y la Octopus Pro recién sacada de la caja.*
-
-**10 de abril** — Primeras conexiones a la placa.  
-- Conectamos el cable de temperatura del hotend al slot T H0
-- Primera vez que encendemos la Octopus Pro
-- Conexión del CR Touch a PB6 (control) y PB7 (sensor)
-
-📷 *Fotos del proceso de conexión con la placa sobre la mesa.*
+> Cronología completa: desde los primeros componentes en febrero hasta la impresora de 1m³ funcionando.
 
 ---
 
-## Fase 2 — Configuración inicial: 500×500mm
+## Fase 0 — Recepción de componentes y primeras inspecciones (Febrero 2026)
 
-La primera configuración fue para una cama de **500×500mm**, heredada de un diseño tipo Ender 5 Plus.
+### 25 de febrero — Llega la Octopus Pro
 
-**Configuración original:**
-```
-position_max: 500  # X e Y
-```
+Recibimos la BTT Octopus Pro V1.1 y la inspeccionamos antes de conectar nada.
 
-**Problema:** Con la cama pequeña validamos que los motores funcionaban, pero el objetivo siempre fue 1 metro de lado.
+![Trasera Octopus Pro](../fotos/00-prototipo-inicial/IMG_20260225_190124.jpg)
+*Vista trasera de la placa recién recibida. Se pueden leer claramente todos los slots: MOTOR0, MOTOR1, MOTOR2_1, MOTOR2_2... hasta MOTOR7. Versión: 1.1.*
 
----
+También inspeccionamos la zona del USB-C y el conector de la fuente de alimentación.
 
-## Fase 3 — Problemas con el slot MOTOR 3 (Abril 2026)
-
-Descubrimos que el **slot MOTOR 3** de la Octopus Pro estaba **defectuoso**.
-
-- El driver TMC5160 conectado en MOTOR 3 no respondía
-- Probamos el driver en otro slot y funcionó → el problema era el slot, no el driver
-- Solución: mover el motor Z derecho (stepper_z1) al slot **MOTOR 5**
-
-Ver detalles: [Slot MOTOR 3 defectuoso](../problemas/motor-z-slot-defectuoso.md)
+**Primer paso:** Identificar todos los slots de driver y planificar qué motor va en cada slot antes de conectar nada.
 
 ---
 
-## Fase 4 — Doble motor Y en paralelo
+## Fase 1 — Montaje de la estructura (Febrero–Marzo 2026)
 
-**22 de abril** — Instalamos las guías lineales MGN15R en el eje Y.
+El primer paso real del proyecto fue cortar y montar el **marco de perfiles de aluminio 2040**.
 
-📷 *Foto de la guía MGN15R con carros y piezas impresas en naranja.*
+### Materiales de la estructura
+- Perfiles de aluminio 2040 cortados a medida (ver [lista de materiales](../hardware/lista-materiales-estructura.md))
+- Juntas cruzadas impresas en 3D (verde) para unir los perfiles en esquinas y centros
+- Tornillería M5 con tuercas T en ranura del perfil
 
-Inicialmente el eje Y tenía **1 solo motor NEMA 17**. Para el formato 1000mm necesitábamos más fuerza y precisión → añadimos un segundo motor en **paralelo** en el slot MOTOR 2_2, usando el mismo driver TMC2209.
+### Piezas impresas para la estructura
 
-Ver detalles: [Eje Y dual](../problemas/eje-y-dual.md)
+Durante esta fase se imprimieron todas las piezas en 3D necesarias:
 
----
+![Piezas en aula](../fotos/03-piezas-impresas/piezas-impresas-todas-aula.jpeg)
+*Todas las piezas impresas listas en el aula: soportes de motor verdes y guías grises.*
 
-## Fase 5 — Cableado completo (23 de abril 2026)
+![Soportes grandes NEMA23](../fotos/03-piezas-impresas/soportes-nema23-grandes.jpeg)
+*Soportes para los 4 motores NEMA 23 del eje Z.*
 
-📷 *Fotos del cableado completo de la placa: motores X/Y/Z, extrusor, CR Touch, sensores de temperatura.*
-
-En esta fase:
-- Conectamos los dos **TMC5160** (rojo) para los motores Z en MOTOR 1 y MOTOR 5
-- Conectamos los **TMC2209** (azul) para X, Y y extrusor
-- Instalamos el Orbiter SO3 con su motor LDO
-- Primer test de movimiento de todos los ejes
-
----
-
-## Fase 6 — Escalado a 1000×1000mm
-
-Con el hardware validado en 500×500mm, actualizamos la configuración:
-
-```python
-# Antes
-position_max: 500   # X e Y
-
-# Después  
-position_max: 1000  # X e Y
-position_max: 1000  # Z
-```
-
-También se actualizaron los puntos de sondeo del CR Touch:
-```python
-# safe_z_home ahora en el centro real de la cama
-home_xy_position: 500, 500
-
-# bed_mesh actualizado para la cama completa
-mesh_min: 30, 30
-mesh_max: 970, 970
-```
+![Juntas y tensores](../fotos/03-piezas-impresas/juntas-cruzadas-soportes.jpeg)
+*Juntas cruzadas y tensores de correa GT2.*
 
 ---
 
-## Fase 7 — Husillo y guías eje Z (Mayo 2026)
+## Fase 2 — Primera electrónica: testeo de la placa (Abril 2026)
 
-**13 de mayo** — Instalación del husillo trapezoidal en Z.
+### 8 de abril — Primeras conexiones
 
-📷 *Fotos del perfil de aluminio 2040 con el husillo métrico 12 y las guías lineales.*
+Conectamos los primeros componentes a la Octopus Pro para probar que la placa funcionaba antes de montarla en la estructura.
 
-**Dificultad:** Encontrar un husillo métrico 12 (paso 2mm × 4 entradas) de **1200mm de longitud** no era fácil. Fue uno de los cuellos de botella del proyecto.
+![CR Touch ALT04](../fotos/02-electronica/IMG_20260408_193645.jpg)
+*CR Touch modelo ALT04 con sus 5 cables de colores.*
 
-- `rotation_distance: 8` → M12 con 4 entradas = 2mm × 4 = 8mm por vuelta
-- Dos husillos independientes (uno por cada motor Z)
-- El `Z_TILT_ADJUST` de Klipper permite nivelar automáticamente los dos lados
+![Cable hotend etiquetado](../fotos/02-electronica/cable-thermistor-heater-etiquetado.jpeg)
+*Cables del hotend identificados: termistor ATC Semitec 104NT-4 y calentador cerámico 24V 72W.*
+
+![Octopus Pro overview](../fotos/02-electronica/IMG_20260408_193713.jpg)
+*Vista general de la placa con drivers instalados: TMC5160 rojos (Z) y TMC2209 azules (X, Y, extrusor).*
+
+### 10 de abril — Primer arranque con CR Touch
+
+Conectamos el CR Touch a la placa y arrancamos Klipper por primera vez.
+
+![Primer test electronica](../fotos/05-montaje-electronica/primer-test-electronica.jpeg)
+*Placa conectada a la fuente de alimentación y al CR Touch para el primer test.*
+
+**Problema encontrado:** Klipper no arrancaba porque faltaba `z_offset: 0` en la sección `[bltouch]`.  
+→ Ver [crtouch-z-offset.md](../problemas/crtouch-z-offset.md)
+
+### 10 de abril — Test de motores
+
+![Conexion CR Touch](../fotos/02-electronica/conexion-crtouch-cables.jpeg)
+*Conectando los cables del CR Touch a los pines PB6 y PB7 de la Octopus Pro.*
 
 ---
 
-## Fase 8 — Calibración y puesta en marcha
+## Fase 3 — Problemas de hardware (Abril 2026)
 
-Con todo el hardware montado:
+### Slot MOTOR 3 defectuoso
 
-1. **PID calibrado** para el hotend:
-   - `pid_kp = 22.602, pid_ki = 1.408, pid_kd = 90.690`
-   - Temperatura objetivo: 220°C
+Descubrimos que el slot MOTOR 3 de la placa estaba **defectuoso de fábrica**. El motor Z derecho no respondía.
 
-2. **Z_TILT_ADJUST**: corrección automática del paralelismo entre los dos motores Z
+**Diagnóstico:** Probamos el driver en otros slots — funcionaba. Probamos el motor en otros slots — funcionaba. El slot MOTOR 3 estaba muerto.
 
-3. **Bed Mesh 5×5**: mapeo de 25 puntos de la superficie de la cama
+**Solución:** Mover el motor Z derecho al slot **MOTOR 5** y actualizar `printer.cfg`.
 
-4. **rotation_distance del extrusor**: calibrado a `4.637` (oficial SO3: 4.69, ajustado por medición)
+→ Ver [motor-z-slot-defectuoso.md](../problemas/motor-z-slot-defectuoso.md)
+
+### Motor Y no se movía
+
+El motor Y no respondía. Diagnóstico rápido: **el cable JST no estaba bien conectado**.
+
+**Lección:** Antes de cambiar configuración, revisar siempre el cable físico.
+
+→ Ver [eje-y-dual.md](../problemas/eje-y-dual.md)
+
+---
+
+## Fase 4 — Cableado completo (23 de abril 2026)
+
+![Cableado completo en progreso](../fotos/05-montaje-electronica/cableado-completo-en-progreso.jpeg)
+*Sesión de cableado: todos los motores, sensores y calefactores conectados a la placa.*
+
+![Setup completo con Fluidd](../fotos/05-montaje-electronica/setup-octopus-cb1-fluidd.jpeg)
+*Setup de trabajo: Octopus Pro + CB1 + teclado + pantalla con Fluidd. La tablet naranja es la pantalla KlipperScreen.*
+
+### Problemas de ventilación
+
+El ventilador del heatsink del SO3 no se apagaba nunca. La causa: estaba configurado como `[fan]` (ventilador de capa) en lugar de `[heater_fan]`.
+
+→ Ver [ventilador-hotend.md](../problemas/ventilador-hotend.md)
+
+---
+
+## Fase 5 — Primer arranque de Klipper
+
+![Fluidd funcionando](../fotos/05-montaje-electronica/fluidd-funcionando-primer-arranque.jpeg)
+*¡Klipper funcionando! Fluidd mostrando la interfaz completa en el monitor Dell. A la izquierda el rack de electrónica con todo conectado.*
+
+En el monitor se ve la interfaz de Fluidd con:
+- Temperatura del hotend y la cama
+- Controles de movimiento XYZ
+- Consola para comandos G-code
+- Estado de la impresora
+
+La tablet naranja en la mesa es la **BTT KlipperScreen** — pantalla táctil para controlar la impresora sin necesidad de un PC.
+
+---
+
+## Fase 6 — Montaje en la estructura (Mayo 2026)
+
+### 22 de abril — Guías lineales y carro
+
+Instalamos las guías lineales MGN15R en el eje Y:
+
+![Guía lineal montada](../fotos/01-estructura/IMG_20260422_173948.jpg)
+*Guía MGN15R con carro instalada en el perfil de aluminio 2040.*
+
+### 13 de mayo — Husillo y eje Z
+
+Instalamos los husillos trapezoidales M12 de 1200mm con sus soportes impresos:
+
+![Husillo y perfil](../fotos/01-estructura/IMG_20260513_175847.jpg)
+*Husillo M12 (4 entradas, 8mm/vuelta) instalado en el perfil vertical del eje Z.*
+
+![Soporte husillo](../fotos/01-estructura/IMG_20260513_175857.jpg)
+*Soporte impreso en azul para el extremo superior del husillo.*
+
+---
+
+## Fase 7 — Integración final del cabezal
+
+![Cables extrusor montados](../fotos/01-estructura/cables-extrusor-etiquetados-montados.jpeg)
+*Mazo de cables del cabezal ya instalado en la impresora. Los cables están etiquetados como "EXTRUSOR" para facilitar el mantenimiento.*
 
 ---
 
@@ -128,12 +160,23 @@ Con todo el hardware montado:
 
 | Sistema | Estado |
 |---------|--------|
+| Marco estructura | ✅ Montado |
+| Guías lineales MGN15R | ✅ Instaladas |
 | Eje X | ✅ Funcionando |
-| Eje Y (dual) | ✅ Funcionando |
-| Eje Z (dual TMC5160) | ✅ Funcionando |
+| Eje Y dual (2 motores paralelo) | ✅ Funcionando |
+| Eje Z dual (TMC5160 + NEMA23) | ✅ Funcionando |
 | Extrusor SO3 | ✅ Funcionando |
-| CR Touch | ✅ Funcionando |
-| Bed Mesh | ✅ Configurado |
+| CR Touch + Bed Mesh 5×5 | ✅ Configurado |
 | Z_TILT_ADJUST | ✅ Configurado |
-| Cama calefactada | ⚠️ Sin termistor instalado |
-| Pantalla táctil | ⚠️ Driver pendiente |
+| Klipper + Fluidd + KlipperScreen | ✅ Funcionando |
+| Cama calefactada | ⚠️ Sin termistor |
+| Archivos 3D de piezas | ⏳ Pendiente subir |
+
+---
+
+## Pendientes
+
+- [ ] Instalar termistor en cama calefactada
+- [ ] Subir archivos 3D de las piezas impresas al repositorio
+- [ ] Completar calibración final (PID cama, Z offset definitivo)
+- [ ] Subir planos del marco en PDF
