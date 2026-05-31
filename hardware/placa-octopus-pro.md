@@ -6,8 +6,14 @@
 
 ## Vista general
 
+![Octopus Pro V1.1 vista superior](../fotos/02-electronica/octopus-pro-vista-superior-limpia.jpeg)
+*Vista superior de la Octopus Pro V1.1 sin cables: se ven todos los slots de driver, los conectores de alimentación (MOTOR-POWER, POWER, BED-POWER) y los terminales de motor.*
+
 ![Octopus Pro V1.1 overview](../fotos/02-electronica/IMG_20260408_193713.jpg)
 *Octopus Pro V1.1 con los 8 slots de driver ocupados: TMC5160 (rojos) para Z, TMC2209 (azules) para X, Y y extrusor.*
+
+![STM32H723 closeup](../fotos/02-electronica/octopus-stm32-conectores-jst.jpeg)
+*Closeup del microcontrolador STM32H723 y los conectores JST de motor. Se puede leer claramente el chip "STM32H723ZET6" de ST Microelectronics.*
 
 ---
 

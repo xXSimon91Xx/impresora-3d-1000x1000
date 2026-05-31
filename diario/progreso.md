@@ -115,8 +115,14 @@ El ventilador del heatsink del SO3 no se apagaba nunca. La causa: estaba configu
 
 ## Fase 5 — Primer arranque de Klipper
 
+![Fluidd configuración inicial](../fotos/05-montaje-electronica/fluidd-config-error-pantalla.jpeg)
+*Primer arranque con errores de configuración. Fluidd muestra los avisos de printer.cfg que hay que corregir antes de poder mover nada. La tablet naranja (KlipperScreen) ya está activa.*
+
 ![Fluidd funcionando](../fotos/05-montaje-electronica/fluidd-funcionando-primer-arranque.jpeg)
 *¡Klipper funcionando! Fluidd mostrando la interfaz completa en el monitor Dell. A la izquierda el rack de electrónica con todo conectado.*
+
+![Setup completo con KlipperScreen](../fotos/05-montaje-electronica/fluidd-setup-klipperscreen-completo.jpeg)
+*Setup de desarrollo completo: monitor Dell con Fluidd, KlipperScreen naranja en la mesa y toda la electrónica montada a la izquierda.*
 
 En el monitor se ve la interfaz de Fluidd con:
 - Temperatura del hotend y la cama
@@ -136,6 +142,9 @@ Instalamos las guías lineales MGN15R en el eje Y:
 
 ![Guía lineal montada](../fotos/01-estructura/IMG_20260422_173948.jpg)
 *Guía MGN15R con carro instalada en el perfil de aluminio 2040.*
+
+![Soporte motor con polea](../fotos/01-estructura/soporte-motor-polea-perfil-aluminio.jpeg)
+*Soporte de motor impreso (verde) montado sobre el perfil de aluminio 2040. La polea loca naranja guía la correa GT2. En la parte superior se ven los tensores impresos también en naranja.*
 
 ### 13 de mayo — Husillo y eje Z
 

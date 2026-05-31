@@ -4,6 +4,16 @@
 
 ---
 
+## Cables del cabezal instalados en la impresora
+
+![Cable EXTRUSOR etiquetado](../../fotos/01-estructura/cables-extrusor-etiqueta-en-maquina.jpeg)
+*Mazo de cables del cabezal con etiqueta "EXTRUSOR" ya instalado en la impresora. El mazo incluye: motor, termistor, calentador, ventilador, sensor de filamento, botón y CR Touch.*
+
+![Cable hotend etiquetado detalle](../../fotos/02-electronica/cable-hotend-etiquetado-detalle.jpeg)
+*Detalle del extremo del conector: etiquetas "Thermistor104NT-4" y "24V/72W Heater" para identificar cada cable sin errores.*
+
+---
+
 ## Componentes del cabezal
 
 | Componente | Especificación |

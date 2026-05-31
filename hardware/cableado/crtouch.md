@@ -11,6 +11,12 @@
 ![CR Touch ALT04](../../fotos/02-electronica/IMG_20260408_193645.jpg)
 *CR Touch modelo ALT04 con su cable de 5 colores. El lado izquierdo es el conector de la placa (JST), el derecho el del sensor.*
 
+![CR Touch conectado a placa](../../fotos/02-electronica/octopus-crtouch-primer-test-mesa.jpeg)
+*CR Touch conectado a la Octopus Pro para el primer test. Se puede ver el cable de 5 hilos conectado a los pines PB6 (amarillo) y PB7 (azul).*
+
+![Conexión CR Touch](../../fotos/02-electronica/conexion-crtouch-cables.jpeg)
+*Proceso de conexión: insertando el conector JST del CR Touch en los pines correctos de la Octopus Pro.*
+
 ---
 
 ## Pinout — Los 5 cables
