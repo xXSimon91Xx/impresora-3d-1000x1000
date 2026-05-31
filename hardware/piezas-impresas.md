@@ -8,19 +8,19 @@
 
 | Material | Color | Uso |
 |---------|-------|-----|
-| PLA | Verde | Piezas estructurales principales (soportes motor, esquinas, tensores) |
-| PLA | Gris | Soportes auxiliares, guías de husillo, portacables |
+| PETG | Verde | Piezas estructurales no críticas (escuadras, soportes, protectores de barra, topes) |
+| ASA / ABS | Gris | Piezas críticas que requieren mayor resistencia (guías de husillo, portacables funcionales) |
 
 ---
 
 ## Catálogo de piezas
 
-### Soportes de motor NEMA 23 (Z) — ×4
+### Soportes de motor NEMA 23 — ×4
 
-Grandes soportes verdes que alojan los motores NEMA 23 del eje Z. Tienen espacio para el motor, el acoplador y el husillo.
+Grandes soportes verdes que alojan los motores NEMA 23 de los ejes X e Y. Tienen espacio para el motor, el acoplador y la correa GT2.
 
 ![Soportes NEMA23](../fotos/03-piezas-impresas/soportes-nema23-grandes.jpeg)
-*Cuatro soportes para los motores NEMA 23 del eje Z.*
+*Cuatro soportes para los motores NEMA 23 de los ejes X e Y.*
 
 ---
 
@@ -82,10 +82,10 @@ Piezas grises pequeñas que guían los cables por el marco y los mantienen orden
 
 ---
 
-## Render del extrusor SO3
+## Render del extrusor
 
-![Render extrusor SO3](../fotos/03-piezas-impresas/render-extrusor-so3.jpeg)
-*Renderizado 3D del extrusor Orbiter SO3 mostrando el mecanismo interno: rueda dentada, polea GT2 y el cuerpo de reducción 7.5:1.*
+![Render extrusor](../fotos/03-piezas-impresas/render-extrusor-so3.jpeg)
+*Renderizado 3D del mecanismo del extrusor mostrando la transmisión interna: rueda dentada, polea GT2 y el cuerpo de reducción.*
 
 ---
 

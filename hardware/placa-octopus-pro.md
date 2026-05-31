@@ -143,5 +143,5 @@ serial: /dev/serial/by-id/usb-Klipper_stm32h723xx_15000F001051313531383332-if00
 ## Recursos oficiales
 
 - [Repositorio GitHub BTT Octopus Pro](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro)
-- [Manual PDF incluido en este repo](../BTT_Octopus_pro_EN.pdf)
+- [Manual PDF oficial BTT](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/BIGTREETECH%20Octopus%20Pro%20V1.0%20user%20manual.pdf)
 - [Guía de referencia 3DPrinters-Guide](https://3dprinters-guide.com/bigtreetech-octopus-pro-v1-1-h723-review-a-deep-dive-into-high-speed-3d-printing/)

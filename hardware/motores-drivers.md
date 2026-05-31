@@ -89,10 +89,10 @@ Peso:       ~600-800g
 ```
 
 **¿Por qué NEMA 23 en Z?**  
-La cama de **1000×1000mm** pesa varios kilos (aluminio + vidrio + calefactor). El eje Z tiene que:
-1. Levantar ese peso contra la gravedad
-2. Mantener la cama estable durante la impresión
-3. Hacer micro-ajustes precisos para el `Z_TILT_ADJUST`
+En esta impresora **la cama no se mueve** — el eje Z levanta el pórtico completo (eje X + carro + cabezal extrusor), que pesa varios kilos. El eje Z tiene que:
+1. Levantar ese peso contra la gravedad en cada cambio de capa
+2. Mantener el pórtico estable durante la impresión
+3. Hacer micro-ajustes precisos e independientes para el `Z_TILT_ADJUST`
 
 Un NEMA 17 se quedaría corto de torque y perdería pasos al subir.
 
@@ -102,7 +102,7 @@ Un NEMA 17 se quedaría corto de torque y perdería pasos al subir.
 
 ### Por qué 2 motores en Y
 
-Para recorrer **1000mm en Y**, la correa sería muy larga si solo tirara de un extremo. Necesitamos un motor en cada lado del eje para distribuir la fuerza uniformemente.
+Con **1000mm de recorrido en Y**, un único motor en un extremo generaría un par de fuerzas que desplazaría lateralmente el carro durante el movimiento. Con un motor en cada lado del eje, el empuje es simétrico: el carro se mantiene centrado y alineado sin desviaciones laterales ni vibraciones desiguales.
 
 ### Por qué 1 solo driver para 2 motores
 

@@ -27,7 +27,7 @@
 | **Guías lineales** | MGN15R |
 | **Husillo Z** | Métrico 12, 4 entradas → 8mm/vuelta |
 | **Marco** | Perfil aluminio 2040 |
-| **Piezas mecánicas** | Impresas en 3D (PLA verde + gris) |
+| **Piezas mecánicas** | Impresas en 3D (PETG verde + ASA/ABS gris) + algunas mecanizadas en aluminio |
 
 ---
 
@@ -73,7 +73,7 @@
 *Todas las piezas impresas antes del montaje: soportes de motor (verde), guías y clips (gris).*
 
 ![Soportes NEMA23](fotos/03-piezas-impresas/soportes-nema23-grandes.jpeg)
-*Soportes grandes para los motores NEMA 23 del eje Z.*
+*Soportes para los motores NEMA 23 de los ejes X e Y.*
 
 ---
 

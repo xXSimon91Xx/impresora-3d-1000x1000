@@ -2,8 +2,8 @@
 
 ## Estado actual
 
-> ⚠️ **La cama calefactada está instalada pero el termistor de temperatura NO está montado todavía.**  
-> La configuración actual usa un parche temporal para poder arrancar Klipper sin el sensor real.
+> ⚠️ **La cama calefactada NO está instalada todavía.**  
+> No existe una cama de 1000×1000mm estándar — la solución prevista es montar **4 camas calefactadas de 500×500mm** en paralelo. La configuración actual es un parche temporal para poder arrancar Klipper sin cama real.
 
 ---
 
@@ -11,7 +11,7 @@
 
 | Componente | Estado | Pin |
 |-----------|--------|-----|
-| Calentador cama | ✅ Instalado | PA1 (HE_BED) |
+| Calentador cama | ❌ Pendiente instalar | PA1 (HE_BED) |
 | Termistor temperatura | ❌ Pendiente instalar | PF3 (T1) |
 
 ---
@@ -36,10 +36,11 @@ max_temp: 130
 
 Para completar la cama calefactada:
 
-1. **Comprar:** Termistor NTC 100K tipo EPCOS B57560G104F (o genérico 100K B3950)
-2. **Montar:** Pegar en la parte inferior de la placa calefactora con cinta de kapton
-3. **Conectar:** Al pin PF3 (conector T1 de la Octopus Pro)
-4. **Actualizar config:**
+1. **Comprar:** 4 camas calefactadas estándar de **500×500mm** y montarlas cubriendo el área 1000×1000mm
+2. **Comprar:** Termistor NTC 100K tipo EPCOS B57560G104F (o genérico 100K B3950) — uno por zona o uno central
+3. **Montar:** Pegar termistor en la parte inferior de la placa calefactora con cinta de kapton
+4. **Conectar:** Al pin PF3 (conector T1 de la Octopus Pro)
+5. **Actualizar config:**
 
 ```ini
 [heater_bed]
@@ -51,7 +52,7 @@ min_temp: 0               # restaurar a valor normal
 max_temp: 130
 ```
 
-5. **Calibrar PID de cama:**
+6. **Calibrar PID de cama:**
 ```
 PID_CALIBRATE HEATER=heater_bed TARGET=60
 SAVE_CONFIG
