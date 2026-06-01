@@ -24,15 +24,18 @@ Grandes soportes verdes que alojan los motores NEMA 23 de los ejes X e Y. Tienen
 
 ---
 
-### Juntas cruzadas / uniones de perfil (Cross joints)
+### Conectores de perfil de aluminio
 
-Piezas en cruz verdes que unen los perfiles de aluminio 2040 en las esquinas y centros del marco. También actúan como sujeción para los ejes de los motores.
+Conectores metálicos que unen los perfiles de aluminio 2040 entre sí y anclan las guías lineales (ejes X/Y y Z) al marco. No son piezas impresas — son conectores comerciales de acero/aluminio.
 
-![Juntas cruzadas](../fotos/03-piezas-impresas/juntas-cruzadas-soportes.jpeg)
-*Juntas cruzadas + soporte motor + soportes de correa GT2.*
+![Diagrama montaje tuerca-ranura](../fotos/01-estructura/conector-perfil-tuerca-ranura-diagrama.jpeg)
+*Diagrama de montaje: la tuerca deslizante entra en la ranura del perfil 2040 y el tornillo la aprieta desde dentro.*
 
-![Más soportes](../fotos/03-piezas-impresas/mas-soportes-correa-gt2.jpeg)
-*Tensores de correa GT2 y soportes de motor sobre la mesa.*
+![Conector angular perfil](../fotos/01-estructura/conector-angular-perfil-aluminio.jpeg)
+*Conector angular metálico para unir dos perfiles de aluminio en ángulo recto.*
+
+![Soportes varios](../fotos/03-piezas-impresas/juntas-cruzadas-soportes.jpeg)
+*Soportes de correa GT2 y tensores.*
 
 ---
 
@@ -82,10 +85,35 @@ Piezas grises pequeñas que guían los cables por el marco y los mantienen orden
 
 ---
 
-## Render del extrusor
+## Render del sistema de tensado de correas
 
-![Render extrusor](../fotos/03-piezas-impresas/render-extrusor-so3.jpeg)
-*Renderizado 3D del mecanismo del extrusor mostrando la transmisión interna: rueda dentada, polea GT2 y el cuerpo de reducción.*
+![Render tensado correas](../fotos/03-piezas-impresas/render-extrusor-so3.jpeg)
+*Renderizado 3D del sistema de tensado de correas GT2 de los ejes X e Y, mostrando el mecanismo de ajuste de tensión.*
+
+---
+
+## Patas niveladoras con bloqueo
+
+La estructura descansa sobre **4 ruedas niveladoras** con bloqueo. Permiten mover la impresora fácilmente y fijarla cuando está en posición.
+
+![Rueda niveladora](../fotos/01-estructura/rueda-niveladora-con-bloqueo.jpeg)
+*Rueda niveladora con mecanismo de bloqueo. El botón naranja baja un apoyo metálico que levanta la rueda del suelo, inmovilizando la máquina.*
+
+---
+
+## Mejoras futuras planificadas
+
+### Cierre con paneles de policarbonato
+
+Para poder imprimir materiales técnicos (ABS, ASA, TPU) que necesitan temperatura ambiente estable, se planea cerrar la máquina con paneles de policarbonato corrugado fijados con **imanes de neodimio**.
+
+![Panel policarbonato](../fotos/01-estructura/panel-policarbonato-cierre-maquina.jpeg)
+*Panel corrugado de policarbonato — ligero, resistente y fácil de cortar a medida.*
+
+![Imán neodimio](../fotos/01-estructura/iman-neodimio-10x5mm.jpeg)
+*Imán de neodimio ø10×5mm — embutido en las piezas impresas para retener los paneles sin tornillos.*
+
+Los paneles se fijan sin tornillos: los imanes van embutidos en piezas impresas del marco y en el borde del panel, permitiendo abrirlos y cerrarlos rápidamente.
 
 ---
 

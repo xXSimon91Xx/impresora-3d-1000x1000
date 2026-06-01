@@ -154,6 +154,38 @@ Nuestro valor final calibrado: **`rotation_distance: 4.637`**
 
 ---
 
+## 7. Calibración de impresión — Piezas de prueba
+
+Una vez calibrado el firmware, hay que verificar que la impresora produce piezas correctas dimensionalmente.
+
+### Cubo de calibración 20×20×20mm
+
+Imprimir un cubo de 20×20×20mm y medirlo con calibre:
+
+```
+Objetivo: 20.0mm en X, Y y Z
+Tolerancia aceptable: ±0.2mm
+```
+
+Si hay desviación:
+- **X/Y**: ajustar `rotation_distance` del stepper correspondiente
+- **Z**: ajustar `rotation_distance` del husillo (actualmente 8mm/vuelta)
+- **Extrusor (desbordamiento/hueco)**: ajustar `rotation_distance` del extrusor
+
+### Benchy (3DBenchy)
+
+Imprimir el modelo estándar de referencia [3DBenchy](https://www.3dbenchy.com/). Evaluar:
+- Puentes sin soporte (zona de la cabina)
+- Voladizos
+- Texto en relieve
+- Tolerancias en orificios circulares
+
+### Archivos STL de tolerancias
+
+Imprimir piezas de ajuste (tolerance test) para medir holguras reales entre piezas ensambladas. Útil antes de imprimir piezas funcionales con tolerancias precisas.
+
+---
+
 ## Orden de calibración recomendado
 
 1. Flashear firmware

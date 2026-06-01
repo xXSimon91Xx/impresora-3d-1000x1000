@@ -72,9 +72,9 @@ Carros incluidos con cada guía: tipo R (rodamientos de bolas recirculantes).
 |---------|----------|
 | M3×8 cabeza cilíndrica | ~100 |
 | M3×12 | ~50 |
-| M5×8 (para perfiles 2040) | ~80 |
-| M5×12 | ~40 |
-| Tuercas T M5 (para ranura 2040) | ~100 |
+| M4×8 | ~80 |
+| M4×12 | ~40 |
+| Tuercas T M4 (para ranura perfil 2040) | ~100 |
 | M3 insert (para piezas impresas) | ~60 |
 
 ---
@@ -88,7 +88,7 @@ Carros incluidos con cada guía: tipo R (rodamientos de bolas recirculantes).
 | TMC2209 (azul) | 3 | Drivers X, Y, extrusor |
 | TMC5160-T Pro (rojo) | 2 | Drivers Z izq + Z der |
 | Fuente de alimentación 24V | 1 | ≥15A recomendado |
-| Cama calefactada 1000×1000mm | 1 | 24V |
+| Cama calefactada 500×500mm | 4 | 24V (montadas en paralelo cubriendo 1000×1000mm) |
 | CR Touch ALT04 | 1 | Sonda nivelación |
 | Final de carrera mecánico | 3 | X, Y, Z_max |
 
@@ -100,12 +100,15 @@ Ver [hardware/piezas-impresas.md](piezas-impresas.md) para el catálogo completo
 
 | Tipo | Color | Cantidad aproximada |
 |------|-------|---------------------|
-| Soportes motor NEMA 23 | Verde | 4 |
-| Juntas cruzadas perfil | Verde | 8-12 |
+| Soportes motor NEMA 23 (X/Y) | Verde | 4 |
 | Tensores correa GT2 | Verde | 4-6 |
 | Guías husillo (grises) | Gris | 4 |
 | Portacables | Gris | ~20 |
 | Soporte endstop | Gris | 3 |
+
+**Conectores de perfil metálicos** (no impresos): conectores angulares + tuercas T para unir perfiles 2040 y anclar guías lineales. Ver [fotos de conectores](../fotos/01-estructura/).
+
+**Patas niveladoras con bloqueo:** 4 unidades. Permiten mover y fijar la estructura.
 
 ---
 

@@ -25,8 +25,8 @@ El primer paso real del proyecto fue cortar y montar el **marco de perfiles de a
 
 ### Materiales de la estructura
 - Perfiles de aluminio 2040 cortados a medida (ver [lista de materiales](../hardware/lista-materiales-estructura.md))
-- Juntas cruzadas impresas en 3D (verde) para unir los perfiles en esquinas y centros
-- Tornillería M5 con tuercas T en ranura del perfil
+- Conectores angulares metálicos para unir los perfiles en esquinas
+- Tornillería M3 y M4 con tuercas T en ranura del perfil
 
 ### Piezas impresas para la estructura
 

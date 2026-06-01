@@ -112,3 +112,15 @@ BED-OUT       → salida hacia la cama
 ```
 
 > Separar BED-POWER del resto es importante: la cama consume mucha corriente y puede causar ruido en la señal de los motores si comparte rail con ellos.
+
+**Configuración actual:** las tres entradas están puenteadas para usar una sola fuente 24V.  
+**Futuro:** separar BED-POWER para conectar un relé de alta potencia (4 camas 500×500mm en paralelo).
+
+---
+
+## Crimpado de cables
+
+Todos los conectores JST del proyecto están crimpados a mano con la herramienta apropiada.
+
+![Herramienta crimpadora](../../fotos/02-electronica/herramienta-crimpadora-wirefy.jpeg)
+*Herramienta crimpadora Wirefy con juego de matrices intercambiables. Cada matriz corresponde a un tamaño de terminal: 0.5mm², 1mm², 1.5mm², 2.5mm². Los cables se cortan a la longitud necesaria y se crimpa el terminal antes de insertar en la carcasa JST.*

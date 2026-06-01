@@ -107,6 +107,12 @@ La placa tiene **tres entradas de alimentación independientes**:
 
 Mantener BED-POWER separado es importante: la cama consume mucha corriente y puede introducir ruido en las señales de paso si comparte el rail con los motores.
 
+### Nuestra configuración actual
+
+En este proyecto hemos **puenteado las tres entradas** de alimentación entre sí para simplificar el cableado y poder usar una sola fuente de alimentación 24V.
+
+> **Mejora futura:** Separaremos la entrada `BED-POWER` para conectar un **relé de alta potencia** que gestionará las 4 camas calefactadas de 500×500mm. El relé permite controlar grandes corrientes (>20A) que el MOSFET integrado de la placa no puede manejar directamente.
+
 ---
 
 ## Conectores de temperatura (T0–T3)
@@ -121,6 +127,17 @@ Los conectores T de la placa sirven primariamente para termistores, pero son ent
 | T3 (PF7) | Libre | Endstop Z máximo de seguridad |
 
 ---
+
+## Arquitectura del sistema — Dos placas
+
+El sistema usa **dos placas diferenciadas**:
+
+| Placa | Función |
+|-------|---------|
+| **BTT Octopus Pro** (MCU STM32H723) | Controla motores paso a paso, temperatura, cama calefactada y ventiladores en tiempo real |
+| **BTT CB1** (ARM Cortex-A55, Linux) | El "ordenador": WiFi, interfaz web Fluidd, pantalla KlipperScreen, acceso remoto desde cualquier dispositivo |
+
+El CB1 corre Klipper en Linux y envía comandos al STM32 de la Octopus Pro por USB. El usuario controla todo desde Fluidd (navegador web) o desde la pantalla táctil KlipperScreen.
 
 ## Conexión con CB1
 
