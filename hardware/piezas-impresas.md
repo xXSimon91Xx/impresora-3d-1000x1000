@@ -26,7 +26,7 @@ Grandes soportes verdes que alojan los motores NEMA 23 de los ejes X e Y. Tienen
 
 ### Conectores de perfil de aluminio
 
-Conectores metálicos que unen los perfiles de aluminio 2040 entre sí y anclan las guías lineales (ejes X/Y y Z) al marco. No son piezas impresas — son conectores comerciales de acero/aluminio.
+Conectores metálicos que unen los perfiles de aluminio item 40×80mm entre sí y anclan las guías lineales (ejes X/Y y Z) al marco. No son piezas impresas — son conectores comerciales de acero/aluminio.
 
 ![Diagrama montaje tuerca-ranura](../fotos/01-estructura/conector-perfil-tuerca-ranura-diagrama.jpeg)
 *Diagrama de montaje: la tuerca deslizante entra en la ranura del perfil 2040 y el tornillo la aprieta desde dentro.*
@@ -69,13 +69,13 @@ Piezas grises pequeñas que guían los cables por el marco y los mantienen orden
 *Vista completa de todas las piezas impresas antes del montaje. Las verdes son estructurales, las grises son auxiliares.*
 
 ![Piezas en aula completo](../fotos/03-piezas-impresas/piezas-impresas-aula-completo.jpeg)
-*Vista más amplia: toda la gama de piezas extendida en la mesa del aula — juntas cruzadas, soportes de motor, portacables y guías.*
+*Vista más amplia: toda la gama de piezas extendida en la mesa del aula — soportes de motor, portacables, tensores de correa y guías.*
 
 ![Soportes NEMA23 alineados](../fotos/03-piezas-impresas/soportes-nema23-x4-alineados.jpeg)
 *Los cuatro soportes de motor NEMA 23 (verde) alineados. El diseño en U permite alojar el motor, el acoplador y la parte superior del husillo.*
 
-![Juntas cruzadas y portacables](../fotos/03-piezas-impresas/juntas-cruzadas-portacables-correa.jpeg)
-*Juntas cruzadas verdes (unión de perfiles), portacables grises y soporte de motor con tensores. Al fondo se ve la correa GT2.*
+![Tensores y portacables](../fotos/03-piezas-impresas/juntas-cruzadas-portacables-correa.jpeg)
+*Tensores de correa GT2 verdes, portacables grises y soporte de motor. Al fondo se ve la correa GT2.*
 
 ![Piezas grises detalle](../fotos/03-piezas-impresas/piezas-grises-portacables-engranajes.jpeg)
 *Piezas auxiliares grises: portacables, engranajes de calibración y soporte de sensor de filamento montado.*

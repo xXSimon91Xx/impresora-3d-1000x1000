@@ -33,7 +33,7 @@ Un agradecimiento especial al **director del instituto** por confiar en el proye
 | **Simeon Crasiuc** | Firmware (Klipper / printer.cfg), electrónica, cableado, documentación GitHub. |
 | **Pau Arias March** | Diseño y fabricación de piezas impresas en 3D, montaje mecánico. |
 | **Daniel Roselló Díaz** | Montaje estructura, cableado, fotos del proceso. |
-| *(pendiente nombre)* | *(pendiente)* |
+| **Sergio Tenorio Martínez** | Diseño CAD del marco, planos estructurales item, archivos 3D (STL/STEP pendientes de subir). |
 
 ---
 

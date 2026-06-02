@@ -21,10 +21,10 @@ También inspeccionamos la zona del USB-C y el conector de la fuente de alimenta
 
 ## Fase 1 — Montaje de la estructura (Febrero–Marzo 2026)
 
-El primer paso real del proyecto fue cortar y montar el **marco de perfiles de aluminio 2040**.
+El primer paso real del proyecto fue cortar y montar el **marco de perfiles de aluminio item 40×80mm**.
 
 ### Materiales de la estructura
-- Perfiles de aluminio 2040 cortados a medida (ver [lista de materiales](../hardware/lista-materiales-estructura.md))
+- Perfiles item 40×80mm cortados a medida (ver [lista de materiales](../hardware/lista-materiales-estructura.md))
 - Conectores angulares metálicos para unir los perfiles en esquinas
 - Tornillería M3 y M4 con tuercas T en ranura del perfil
 
@@ -38,8 +38,8 @@ Durante esta fase se imprimieron todas las piezas en 3D necesarias:
 ![Soportes grandes NEMA23](../fotos/03-piezas-impresas/soportes-nema23-grandes.jpeg)
 *Soportes para los 4 motores NEMA 23 del eje Z.*
 
-![Juntas y tensores](../fotos/03-piezas-impresas/juntas-cruzadas-soportes.jpeg)
-*Juntas cruzadas y tensores de correa GT2.*
+![Tensores y soportes](../fotos/03-piezas-impresas/juntas-cruzadas-soportes.jpeg)
+*Tensores de correa GT2 y soportes impresos.*
 
 ---
 
@@ -141,10 +141,10 @@ La tablet naranja en la mesa es la **BTT KlipperScreen** — pantalla táctil pa
 Instalamos las guías lineales MGN15R en el eje Y:
 
 ![Guía lineal montada](../fotos/01-estructura/IMG_20260422_173948.jpg)
-*Guía MGN15R con carro instalada en el perfil de aluminio 2040.*
+*Guía MGN15R con carro instalada en el perfil item 40×80mm.*
 
 ![Soporte motor con polea](../fotos/01-estructura/soporte-motor-polea-perfil-aluminio.jpeg)
-*Soporte de motor impreso (verde) montado sobre el perfil de aluminio 2040. La polea loca naranja guía la correa GT2. En la parte superior se ven los tensores impresos también en naranja.*
+*Soporte de motor impreso (verde) montado sobre el perfil item 40×80mm. La polea loca naranja guía la correa GT2. En la parte superior se ven los tensores impresos también en naranja.*
 
 ### 13 de mayo — Husillo y eje Z
 

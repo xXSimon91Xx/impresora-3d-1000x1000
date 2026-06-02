@@ -91,18 +91,19 @@ Los motores Z son **NEMA 23**, que necesitan **2A de corriente continua**. El TM
 
 ---
 
-## Extrusor — Orbiter SO3
+## Extrusor — LDO Smart Orbiter v3.0
 
 | Campo | Valor |
 |-------|-------|
+| **Modelo** | LDO Smart Orbiter v3.0 (diseñado por Dr. Robert Lőrincz) |
 | **Tipo** | Direct drive con reducción 7.5:1 |
 | **rotation_distance calibrado** | 4.637 mm/rev |
 | **Motor** | LDO-36STH20-1004AHG |
 | **Sensor filamento** | Integrado |
 | **Botón descarga** | Integrado |
 
-**¿Por qué el SO3?**  
-Alta relación de reducción (7.5:1), muy ligero para un direct drive, y tiene sensor de filamento integrado.
+**¿Por qué el Smart Orbiter v3.0?**  
+Alta relación de reducción (7.5:1), muy ligero para un direct drive, sensor de filamento integrado y botón de descarga integrado. Es uno de los extrusores direct drive más recomendados para impresoras de gran formato.
 
 ---
 
@@ -124,7 +125,7 @@ Con una cama de 1m² es imposible nivelarla perfectamente a mano. El CR Touch + 
 
 | Componente | Especificación |
 |-----------|----------------|
-| **Perfil aluminio** | 2040 (20×40 mm) |
+| **Perfiles aluminio** | item 40×80mm, serie XMS, art. 0.0.669.99 |
 | **Guías lineales** | MGN15R (carros R = rodamientos de bolas recirculantes) |
 | **Husillo Z** | Métrico 12, paso 2mm, 4 entradas (= 8mm/rev) |
 | **Correa XY** | GT2, 2mm paso, polea 20 dientes (= 40mm/rev) |

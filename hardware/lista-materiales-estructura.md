@@ -77,7 +77,7 @@ Carros incluidos con cada guía: tipo R (rodamientos de bolas recirculantes).
 | M3×12 | ~50 |
 | M4×8 | ~80 |
 | M4×12 | ~40 |
-| Tuercas T M4 (para ranura perfil 2040) | ~100 |
+| Tuercas T M4 (para ranura perfil item (8mm)) | ~100 |
 | M3 insert (para piezas impresas) | ~60 |
 
 ---
@@ -109,7 +109,7 @@ Ver [hardware/piezas-impresas.md](piezas-impresas.md) para el catálogo completo
 | Portacables | Gris | ~20 |
 | Soporte endstop | Gris | 3 |
 
-**Conectores de perfil metálicos** (no impresos): conectores angulares + tuercas T para unir perfiles 2040 y anclar guías lineales. Ver [fotos de conectores](../fotos/01-estructura/).
+**Conectores de perfil metálicos** (no impresos): conectores angulares + tuercas T para unir perfiles item 40×80mm y anclar guías lineales. Ver [fotos de conectores](../fotos/01-estructura/).
 
 **Patas niveladoras con bloqueo:** 4 unidades. Permiten mover y fijar la estructura.
 
