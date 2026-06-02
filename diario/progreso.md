@@ -165,6 +165,43 @@ Instalamos los husillos trapezoidales M12 de 1200mm con sus soportes impresos:
 
 ---
 
+## Fase 8 — Cableado completo y etiquetado (1 junio 2026)
+
+### 1 de junio — Sesión de cableado final
+
+Sesión completa de conexión de todos los cables al panel de electrónica verde. Se etiquetaron todos los conectores antes de enchufar.
+
+**Sistema de etiquetado de cables:**
+
+| Etiqueta | Cable |
+|----------|-------|
+| `MY1` | Motor Y izquierdo (MOTOR2_1) |
+| `MY2` | Motor Y derecho (MOTOR2_2, paralelo) |
+| `MX` | Motor X (MOTOR0) |
+| `MZ1` | Motor Z izquierdo (MOTOR1) |
+| `MZ2` | Motor Z derecho (MOTOR5) |
+| `BLTOU` | Cable de control CR Touch (servo, PB6) |
+| `NDSTOPZ` | Endstop Z máximo (PF7) |
+| `NDSTOPX` | Endstop X (PG6) |
+| `BED` | Cables cama calefactada (pendiente) |
+
+![Panel electrónica completo](../fotos/05-montaje-electronica/panel-electronica-completo-verde.jpg)
+*Panel verde con Octopus Pro + CB1 completamente cableado. Todos los conectores llevan etiquetas impresas.*
+
+![Drivers y cables etiquetados](../fotos/05-montaje-electronica/drivers-tmc-cables-etiquetados.jpg)
+*Detalle de los drivers con cables etiquetados saliendo hacia los motores.*
+
+![KlipperScreen y electrónica](../fotos/05-montaje-electronica/klipperscreen-y-electronica-montados.jpg)
+*La pantalla KlipperScreen (carcasa naranja impresa en 3D) instalada junto al panel de electrónica en la máquina.*
+
+### Incidente — Cable de endstop roto
+
+Durante el proceso de etiquetado se encontró un cable de endstop con el extremo pelado (sin terminal). Se resoldó y se crimpó un terminal nuevo.
+
+**Lección**: siempre revisar la continuidad de los cables de endstop antes de energizar.
+
+---
+
 ## Estado actual
 
 | Sistema | Estado |
@@ -186,6 +223,8 @@ Instalamos los husillos trapezoidales M12 de 1200mm con sus soportes impresos:
 ## Pendientes
 
 - [ ] Instalar termistor en cama calefactada
-- [ ] Subir archivos 3D de las piezas impresas al repositorio
-- [ ] Completar calibración final (PID cama, Z offset definitivo)
-- [ ] Subir planos del marco en PDF
+- [ ] Instalar 4 × camas calefactadas 500×500mm en paralelo
+- [ ] Subir archivos STL/STEP de piezas impresas (Sergio)
+- [ ] Completar calibración final (PID cama, Z offset definitivo con `PROBE_CALIBRATE`)
+- [ ] Subir planos del marco en PDF (Sergio)
+- [ ] Añadir ventiladores en panel de electrónica

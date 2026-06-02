@@ -1,19 +1,22 @@
 # Lista de materiales — Estructura mecánica
 
-> **Nota:** Esta lista está basada en los planos del proyecto. Para medidas exactas de los perfiles de aluminio consultar el PDF de planos estructurales adjunto.
+> **Nota:** Esta lista está basada en los planos del proyecto. Para medidas exactas consultar el [PDF de planos estructurales](planos-estructurales.md) — generado con el configurador de item.
 
 ---
 
-## Perfiles de aluminio 2040 (20×40mm)
+## Perfiles de aluminio item (40×80mm)
 
-| Pieza | Cantidad | Longitud aproximada | Eje |
-|-------|----------|---------------------|-----|
-| Perfil horizontal frontal/trasero | 4 | ~1050mm | Y |
-| Perfil horizontal izquierdo/derecho | 4 | ~1050mm | X |
-| Perfil vertical (columnas) | 4 | ~1100mm | Z |
-| Perfil intermedio refuerzo | ~4-8 | variable | — |
+> Los perfiles son de la marca **item** (Industrietechnik), serie XMS, art. 0.0.669.99.  
+> Perfil X 8 R40-90°, sección 40×80 mm, ranura 8 mm, taladro D6.8 M8 en extremos.
 
-> Las longitudes exactas dependen del diseño final. Ver planos PDF del proyecto.
+| Pieza | Cantidad | Longitud | Eje |
+|-------|----------|----------|-----|
+| Perfil tipo 13v (frontal/trasero) | 3 | 1400 mm | Y |
+| Perfil tipo 14v (lateral) | 1 | 1400 mm | X |
+| Perfiles verticales (columnas) | 4 | 1400 mm | Z |
+| Perfiles de refuerzo interior | ~4-8 | variable | — |
+
+> Dimensión exterior del marco: **1441.5 mm** (1400 mm sin accesorios). Ver [planos estructurales](planos-estructurales.md).
 
 ---
 
