@@ -29,7 +29,7 @@ Grandes soportes verdes que alojan los motores NEMA 23 de los ejes X e Y. Tienen
 Conectores metálicos que unen los perfiles de aluminio item 40×80mm entre sí y anclan las guías lineales (ejes X/Y y Z) al marco. No son piezas impresas — son conectores comerciales de acero/aluminio.
 
 ![Diagrama montaje tuerca-ranura](../fotos/01-estructura/conector-perfil-tuerca-ranura-diagrama.jpeg)
-*Diagrama de montaje: la tuerca deslizante entra en la ranura del perfil 2040 y el tornillo la aprieta desde dentro.*
+*Diagrama de montaje: la tuerca deslizante entra en la ranura del perfil item 40×80mm y el tornillo la aprieta desde dentro.*
 
 ![Conector angular perfil](../fotos/01-estructura/conector-angular-perfil-aluminio.jpeg)
 *Conector angular metálico para unir dos perfiles de aluminio en ángulo recto.*

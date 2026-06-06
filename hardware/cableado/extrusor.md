@@ -1,4 +1,4 @@
-# Cableado — Extrusor Orbiter SO3
+# Cableado — LDO Smart Orbiter v3.0
 
 > El extrusor es el componente más complejo del cabezal: motor, hotend, termistor, calentador, ventilador, sensor de filamento y botón de descarga.
 
@@ -18,7 +18,7 @@
 
 | Componente | Especificación |
 |-----------|----------------|
-| Extrusor | Orbiter SO3 (direct drive, reducción 7.5:1) |
+| Extrusor | LDO Smart Orbiter v3.0 (direct drive, reducción 7.5:1) |
 | Motor | LDO-36STH20-1004AHG (compacto, 1A nominal) |
 | Driver | TMC2209 (UART), slot MOTOR 4 |
 | Termistor | ATC Semitec 104NT-4-R025H42G |

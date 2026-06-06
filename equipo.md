@@ -1,7 +1,7 @@
 # El equipo
 
 <p align="center">
-  <img src="assets/logo-institut-jaume-huguet.png" alt="Institut Jaume Huguet" width="400"/>
+  <img src="assets/logo-institut-jaume-huguet.png" alt="Institut Jaume Huguet — Antiga Escola del Treball, Valls" width="400"/>
 </p>
 
 > **Cicle Formatiu de Fabricació Additiva (CEFP) — Curso 2025-2026**  

@@ -2,7 +2,7 @@
 
 ## Descripción del problema
 
-El ventilador del heatsink del extrusor Orbiter SO3 **nunca se apagaba**, independientemente de la temperatura del hotend.
+El ventilador del heatsink del extrusor LDO Smart Orbiter v3.0 **nunca se apagaba**, independientemente de la temperatura del hotend.
 
 También ocurrió el problema opuesto: después de calibrar, el ventilador **nunca arrancaba** hasta que se corrigió el pin.
 

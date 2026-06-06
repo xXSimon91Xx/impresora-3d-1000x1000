@@ -86,7 +86,7 @@ Los motores Z son **NEMA 23**, que necesitan **2A de corriente continua**. El TM
 
 ### LDO-36STH20-1004AHG — Extrusor (dentro del SO3)
 
-- Motor compacto integrado en el Orbiter SO3
+- Motor compacto integrado en el Smart Orbiter v3.0
 - Corriente run: 0.85A
 
 ---
@@ -113,7 +113,7 @@ Alta relación de reducción (7.5:1), muy ligero para un direct drive, sensor de
 |-------|-------|
 | **Modelo** | Creality CR Touch ALT04 |
 | **Tipo** | Punta metálica servo-controlada |
-| **Protocolo** | 5 hilos (compatibe BL Touch) |
+| **Protocolo** | 5 hilos (compatible BL-Touch) |
 | **Repetibilidad** | ±0.005 mm |
 
 **¿Por qué CR Touch y no un final de carrera en Z?**  

@@ -126,7 +126,7 @@ Podríamos haber puesto 2 drivers independientes para Y (como hacemos en Z con Z
 
 ---
 
-## Extrusor — Orbiter SO3 con TMC2209
+## Extrusor — LDO Smart Orbiter v3.0 con TMC2209
 
 El extrusor es especial: queremos **máxima respuesta** en los cambios de velocidad (aceleración/deceleración rápida del filamento).
 
