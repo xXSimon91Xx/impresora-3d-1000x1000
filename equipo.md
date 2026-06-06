@@ -22,7 +22,7 @@ Un agradecimiento especial al **director del instituto** por confiar en el proye
 | Nombre | Rol |
 |--------|-----|
 | **Fèlix Garcia Garcia** | Tutor técnico del proyecto. Supervisión general, revisión de documentación y validación técnica. |
-| **Héctor Zazo Jiménez** | Apoyo en diseño mecánico y estructura. |
+| **Héctor Zazo Jiménez** | Apoyo en electrónica, cableado eléctrico e informática. Supervisión de las conexiones eléctricas y los sistemas informáticos del proyecto. |
 | **Raquel Muñoz** | Seguimiento pedagógico del proyecto. |
 
 ---
