@@ -5,8 +5,8 @@
 <h1 align="center">Impresora 3D Cartesiana 1000×1000×1000 mm</h1>
 
 <p align="center">
-  Proyecto de construcción de una impresora 3D cartesiana de gran formato desde cero.<br>
-  Realizado en el <strong>Institut Jaume Huguet</strong> — Antiga Escola del Treball, Valls (Tarragona)<br>
+  <strong>Cicle Formatiu de Fabricació Additiva — CEFP 2025-2026</strong><br>
+  <strong>Institut Jaume Huguet — Antiga Escola del Treball</strong>, Valls (Tarragona)<br>
   <a href="https://institutjaumehuguet.cat">institutjaumehuguet.cat</a>
 </p>
 
@@ -60,6 +60,16 @@ Se trata de una impresora **cartesiana**: el cabezal de impresión se mueve en l
 **¿Para qué sirve?** Para fabricar piezas grandes que no caben en una impresora normal: estructuras, moldes, prototipos industriales, piezas de coches, proyectos de arquitectura, etc.
 
 **¿Qué la hace especial?** Todo el sistema de control (firmware Klipper) es de código abierto y se puede acceder a él desde cualquier dispositivo de la red del instituto. No necesita un ordenador conectado para imprimir — tiene su propio ordenador de control integrado (BTT CB1).
+
+---
+
+## La máquina terminada — 5 junio 2026
+
+![Máquina completa](fotos/08-maquina-completa/maquina-completa-frontal-hero.jpg)
+*La impresora 3D de 1000×1000×1000mm completamente ensamblada en el taller del Institut Jaume Huguet. Altura total ~1.5m. KlipperScreen táctil (naranja) montado en el perfil derecho. Cama de cristal provisional instalada.*
+
+![Máquina vista frontal con pantalla](fotos/08-maquina-completa/maquina-completa-frontal-clase.jpg)
+*Vista frontal de la impresora en el aula del taller. La escala respecto al mobiliario del instituto da una idea del tamaño de la máquina.*
 
 ---
 
@@ -144,4 +154,4 @@ El marco está construido con **perfiles item 40×80 mm**, un sistema modular de
 
 ---
 
-*Proyecto de clase — Institut Jaume Huguet, Valls. Curso 2025-2026.*
+*Cicle Formatiu de Fabricació Additiva — CEFP 2025-2026 | Institut Jaume Huguet — Antiga Escola del Treball, Valls*

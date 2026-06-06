@@ -202,6 +202,37 @@ Durante el proceso de etiquetado se encontró un cable de endstop con el extremo
 
 ---
 
+## Fase 9 — Máquina completamente ensamblada (5 junio 2026)
+
+La impresora está **de pie y operativa** en el taller del Institut Jaume Huguet. Esta es la primera vez que la máquina se ve completamente montada en su ubicación final.
+
+### Estado del montaje
+
+![Máquina completa — vista frontal](../fotos/08-maquina-completa/maquina-completa-frontal-hero.jpg)
+*Impresora 3D de 1000×1000×1000mm completamente ensamblada en el taller. Altura total aproximada 1.5m. KlipperScreen (naranja) montado en el perfil lateral derecho.*
+
+![Interior — cama instalada](../fotos/08-maquina-completa/interior-cama-instalada.jpg)
+*Vista interior desde arriba: cama de cristal provisional instalada sobre el marco inferior. Los cables del eje X recorren la estructura.*
+
+![Eje Y con endstop](../fotos/08-maquina-completa/eje-y-carrusel-endstop.jpg)
+*Carro del eje Y con el endstop (azul) montado y el cabezal de impresión en posición.*
+
+![Vista desde el aula](../fotos/08-maquina-completa/maquina-completa-lateral-aula.jpg)
+*La impresora en el contexto del aula-taller. La escala respecto al mobiliario del instituto muestra el tamaño real de la máquina.*
+
+### Componentes montados en esta fase
+- ✅ Marco item 40×80mm completamente ensamblado
+- ✅ Guías lineales MGN15R instaladas en X, Y, Z
+- ✅ Motores NEMA17 (X, Y×2) y NEMA23 (Z×2) montados
+- ✅ Husillos M12 instalados y acoplados
+- ✅ Panel de electrónica (Octopus Pro + CB1) instalado
+- ✅ KlipperScreen montado en perfil lateral
+- ✅ Cama de cristal provisional (para primeras pruebas)
+- ✅ Patas niveladoras instaladas
+- ⏳ Cama calefactada (4 × 500×500mm) — pendiente instalar
+
+---
+
 ## Estado actual
 
 | Sistema | Estado |
@@ -215,8 +246,8 @@ Durante el proceso de etiquetado se encontró un cable de endstop con el extremo
 | CR Touch + Bed Mesh 5×5 | ✅ Configurado |
 | Z_TILT_ADJUST | ✅ Configurado |
 | Klipper + Fluidd + KlipperScreen | ✅ Funcionando |
-| Cama calefactada | ⚠️ Sin termistor |
-| Archivos 3D de piezas | ⏳ Pendiente subir |
+| Cama calefactada (4×500×500mm) | ⏳ Pendiente instalar |
+| Archivos 3D de piezas | ⏳ Pendiente subir (Sergio) |
 
 ---
 

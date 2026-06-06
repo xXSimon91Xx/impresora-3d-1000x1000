@@ -4,8 +4,9 @@
   <img src="assets/logo-institut-jaume-huguet.png" alt="Institut Jaume Huguet" width="400"/>
 </p>
 
-> Proyecto realizado en el **Institut Jaume Huguet** — Antiga Escola del Treball, Valls.  
-> Centro con 100 años de historia formando a profesionales técnicos en la comarca del Camp de Tarragona.  
+> **Cicle Formatiu de Fabricació Additiva (CEFP) — Curso 2025-2026**  
+> Proyecto realizado en el **Institut Jaume Huguet — Antiga Escola del Treball**, Valls.  
+> Centro con más de 100 años de historia formando a profesionales técnicos en el Camp de Tarragona.  
 > 🌐 [institutjaumehuguet.cat](https://institutjaumehuguet.cat)
 
 ---
