@@ -137,7 +137,7 @@ Se trata de una impresora **cartesiana**: el cabezal de impresión se mueve en l
 | **Motores Z** | NEMA 23 (2 unidades, dual Z independiente) |
 | **Guías lineales** | MGN15R (rodamientos recirculantes) |
 | **Husillo Z** | M12 × 4 entradas → 8 mm/vuelta |
-| **Marco** | Perfiles item 40×80 mm (serie XMS, art. 0.0.669.99, L=1400 mm) |
+| **Marco** | Perfiles item 40×80 mm (serie XMS, art. 0.0.669.99) |
 | **Piezas mecánicas** | PETG (verde, no crítico) + ASA/ABS (gris, crítico) |
 
 ---
