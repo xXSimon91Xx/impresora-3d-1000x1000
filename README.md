@@ -18,6 +18,16 @@
 
 ---
 
+## Versiones del repositorio
+
+| Idioma | Repositorio |
+|--------|-------------|
+| 🇪🇸 Español | **este repositorio** |
+| 🏴󠁥󠁳󠁣󠁴󠁿 Català | [impresora-3d-1000x1000-ca](https://github.com/xXSimon91Xx/impresora-3d-1000x1000-ca) |
+| 🇬🇧 English | [impresora-3d-1000x1000-en](https://github.com/xXSimon91Xx/impresora-3d-1000x1000-en) |
+
+---
+
 ## Índice de documentación
 
 ### Para empezar — guía de la máquina
@@ -26,6 +36,7 @@
 - [Diario del proyecto](diario/progreso.md) — cronología completa desde febrero 2026
 
 ### Hardware
+- [**Archivos 3D — 57 archivos STEP**](hardware/archivos-3d/) — ensamble completo, extrusor, ejes, cama (Sergio Tenorio)
 - [Lista de materiales — Estructura](hardware/lista-materiales-estructura.md)
 - [Planos estructurales — Marco item](hardware/planos-estructurales.md)
 - [Placa BTT Octopus Pro](hardware/placa-octopus-pro.md)

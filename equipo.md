@@ -52,6 +52,6 @@ Este repositorio está disponible en tres idiomas:
 
 | Idioma | Repositorio |
 |--------|-------------|
-| 🇪🇸 Español | *(este repositorio)* |
-| 🏴󠁥󠁳󠁣󠁴󠁿 Català | *(próximamente)* |
-| 🇬🇧 English | *(próximamente)* |
+| 🇪🇸 Español | **este repositorio** |
+| 🏴󠁥󠁳󠁣󠁴󠁿 Català | [impresora-3d-1000x1000-ca](https://github.com/xXSimon91Xx/impresora-3d-1000x1000-ca) |
+| 🇬🇧 English | [impresora-3d-1000x1000-en](https://github.com/xXSimon91Xx/impresora-3d-1000x1000-en) |

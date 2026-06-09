@@ -119,5 +119,8 @@ Los paneles se fijan sin tornillos: los imanes van embutidos en piezas impresas 
 
 ## Archivos 3D
 
-> **Pendiente**: Subir los archivos fuente de los modelos 3D (.stl / .step) al repositorio.  
-> Los modelos están diseñados específicamente para esta impresora. Contactar con el equipo del proyecto para obtener los archivos.
+Los archivos STEP de todos los componentes del proyecto están disponibles en la carpeta [`hardware/archivos-3d/`](archivos-3d/).
+
+Incluye: ensamble completo, extrusor Smart Orbiter v3.0, ejes X/Y/Z, cama calefactada, perfiles item y elementos de transmisión (57 archivos STEP en total).
+
+Diseñados por **Sergio Tenorio Martínez**. Formato STEP — compatible con FreeCAD, Fusion 360, SolidWorks y cualquier CAD estándar. También visualizables online en [3dviewer.net](https://3dviewer.net).
