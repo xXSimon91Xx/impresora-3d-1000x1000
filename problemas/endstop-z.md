@@ -32,7 +32,7 @@ Esto se hace con `[gcode_button]` en lugar de `[endstop_pin]`:
 
 ```ini
 [gcode_button endstop_z_max]
-pin: ^PF7           # ^ = pullup activado. T3 pin
+pin: ~PF7           # ~ = pulldown activado. J49 (T3) pin
 press_gcode:
   M118 EMERGENCIA - Endstop Z maximo activado
   M112             # M112 = parada de emergencia inmediata
@@ -40,8 +40,9 @@ press_gcode:
 
 `M112` corta el movimiento y desactiva todos los calefactores instantáneamente.
 
-> **¿Por qué `^` (pullup)?**  
-> Los conectores T de la placa tienen resistencias de pullup. Sin el `^`, el pin flota entre 0 y 1 y da falsas alarmas.
+> **¿Por qué `~` (pulldown)?**  
+> Se cambió de `^` (pullup) a `~` (pulldown) tras pruebas físicas. Con pullup el pin daba activaciones falsas. Con pulldown (`~`, resistencia a GND interna del STM32) el final de carrera funciona de forma estable.  
+> `~` en Klipper = activar resistencia pulldown interna del MCU (STM32H723 lo soporta).
 
 ## Cableado
 
@@ -62,5 +63,5 @@ El eje Z se para inmediatamente si el tope superior es alcanzado, sin interferir
 ## Lección
 
 - Los conectores T de temperatura pueden usarse como entradas digitales generales con `[gcode_button]`
-- Siempre activar pullup (`^`) para sensores mecánicos
+- Probar pullup (`^`) y pulldown (`~`) según el cableado físico — en este caso pulldown resultó más estable
 - `M112` es la parada de emergencia más segura — no `M0` ni `CANCEL_PRINT`

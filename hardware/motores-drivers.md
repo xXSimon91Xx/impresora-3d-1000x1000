@@ -133,7 +133,7 @@ El extrusor es especial: queremos **máxima respuesta** en los cambios de veloci
 Por eso, el TMC2209 del extrusor tiene **StealthChop desactivado**:
 
 ```ini
-[tmc2209 extrusor]
+[tmc2209 extruder]
 stealthchop_threshold: 0   # 0 = StealthChop SIEMPRE desactivado
 ```
 
