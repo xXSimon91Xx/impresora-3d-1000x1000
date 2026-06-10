@@ -122,9 +122,10 @@ Los conectores T de la placa sirven primariamente para termistores, pero son ent
 | Conector | Uso normal | Nuestro uso |
 |---------|-----------|-------------|
 | T0 (PF4) | Termistor hotend | Termistor ATC Semitec SO3 |
-| T1 (PF3) | Termistor cama | Termistor cama (pendiente) |
-| T2 | Libre | — |
+| T1 (PF5) | Endstop X (reconvertido) | Final de carrera eje X |
+| T2 (PF6) | Endstop Y (reconvertido) | Final de carrera eje Y |
 | T3 (PF7) | Libre | Endstop Z máximo de seguridad |
+| BED (PF3) | Termistor cama | Termistor cama (pendiente) |
 
 ---
 

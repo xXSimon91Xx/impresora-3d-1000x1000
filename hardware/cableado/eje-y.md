@@ -21,7 +21,7 @@ dir_pin: PG3
 enable_pin: !PG5
 microsteps: 16
 rotation_distance: 40      # polea 20T × 2mm paso GT2 = 40mm/vuelta
-endstop_pin: ^PG9          # ^ = pullup
+endstop_pin: ^!PF6         # T2 - pullup + lógica invertida
 position_endstop: 0
 position_max: 1000
 homing_speed: 50
@@ -75,8 +75,8 @@ Ver: [Problema — Eje Y dual](../../problemas/eje-y-dual.md)
 ## Endstop Y
 
 ```
-Endstop Y → STOP_2 (PG9)
-  Señal → PG9
+Endstop Y → T2 (PF6)
+  Señal → PF6
   GND   → GND
 ```
 

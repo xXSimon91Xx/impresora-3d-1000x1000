@@ -18,8 +18,8 @@ graph TD
     OCT -->|MOTOR 5 - SPI| Z2[Motor Z der - NEMA23]
     OCT -->|MOTOR 4 - UART| EXT[Extrusor SO3 - LDO]
 
-    OCT -->|PG6 endstop| ES_X[Endstop X]
-    OCT -->|PG9 endstop| ES_Y[Endstop Y]
+    OCT -->|PF5 T1 endstop| ES_X[Endstop X]
+    OCT -->|PF6 T2 endstop| ES_Y[Endstop Y]
     OCT -->|PF7 T3| ES_ZMAX[Endstop Z máximo]
     OCT -->|PB6 control / PB7 sensor| CRT[CR Touch ALT04]
 
@@ -55,8 +55,8 @@ graph TD
 
 | Componente | Pin | Modo | Conector en placa |
 |-----------|-----|------|-------------------|
-| Endstop X | PG6 | Digital, pullup | STOP_0 |
-| Endstop Y | PG9 | Digital, pullup | STOP_2 |
+| Endstop X | PF5 | Digital, pullup invertido | T1 |
+| Endstop Y | PF6 | Digital, pullup invertido | T2 |
 | Endstop Z virtual | probe:z_virtual_endstop | CR Touch | (via bltouch) |
 | Endstop Z máximo | PF7 | Digital, pullup | T3 |
 
@@ -85,6 +85,7 @@ graph TD
 | Ventilador | Pin | Tipo en Klipper |
 |-----------|-----|-----------------|
 | Heatsink SO3 | PD12 (FAN2) | `[heater_fan]` — controlado por temp hotend |
+| Ventilador de capa | PD13 (FAN3, J53) | `[fan]` — controlado por el slicer (M106/M107) |
 
 ---
 

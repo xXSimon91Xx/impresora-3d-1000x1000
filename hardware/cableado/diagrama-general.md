@@ -24,8 +24,8 @@
 │  MOTOR5──TMC5160──► Motor Z der (NEMA23)  [MOTOR3 = DEFECTUOSO]    │
 │  MOTOR4──TMC2209──► Extrusor SO3 (LDO)                             │
 │                                                                      │
-│  STOP0 (PG6) ◄──── Endstop X                                       │
-│  STOP2 (PG9) ◄──── Endstop Y                                       │
+│  T1 (PF5)    ◄──── Endstop X                                       │
+│  T2 (PF6)    ◄──── Endstop Y                                       │
 │  T3 (PF7)    ◄──── Endstop Z máximo (seguridad)                    │
 │  PB6 / PB7   ◄──► CR Touch (control + sensor)                      │
 │                                                                      │
@@ -34,6 +34,7 @@
 │  HE0 (PA3)   ────► Calentador hotend 24V 72W                       │
 │  HE_BED(PA1) ────► Cama calefactada 24V                            │
 │  FAN2 (PD12) ────► Ventilador heatsink SO3                         │
+│  FAN3 (PD13) ────► Ventilador de capa (J53)                        │
 │                                                                      │
 │  PG11 ◄────────── Sensor filamento SO3                              │
 │  PG10 ◄────────── Botón descarga SO3                               │
