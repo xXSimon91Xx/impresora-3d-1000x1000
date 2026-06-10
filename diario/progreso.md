@@ -257,5 +257,4 @@ La impresora está **de pie y operativa** en el taller del Institut Jaume Huguet
 - [ ] Instalar 4 × camas calefactadas 500×500mm en paralelo
 - [ ] Subir archivos STL/STEP de piezas impresas (Sergio)
 - [ ] Completar calibración final (PID cama, Z offset definitivo con `PROBE_CALIBRATE`)
-- [ ] Subir planos del marco en PDF (Sergio)
 - [ ] Añadir ventiladores en panel de electrónica

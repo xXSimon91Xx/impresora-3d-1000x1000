@@ -61,8 +61,3 @@ Los planos completos del proyecto fueron elaborados con el software de item y co
 
 ---
 
-## Nota sobre los archivos originales
-
-Los planos completos en PDF están pendientes de subir al repositorio. El archivo original fue generado con el configurador online de item y contiene las 17 páginas completas con todas las especificaciones de corte y ensamblaje.
-
-> **Pendiente**: Sergio subirá el PDF completo al repositorio cuando lo tenga disponible.
