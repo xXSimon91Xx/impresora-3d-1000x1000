@@ -2,7 +2,6 @@
 
 Todos los archivos STEP del proyecto. Formato STEP (ISO 10303) — compatible con cualquier software CAD (FreeCAD, Fusion 360, SolidWorks, CATIA, etc.).
 
-> Diseñados por **Sergio Tenorio Martínez** para esta impresora.  
 > Cicle Formatiu de Fabricació Additiva — CEFP 2025-2026 | Institut Jaume Huguet — Antiga Escola del Treball, Valls.
 
 ---
