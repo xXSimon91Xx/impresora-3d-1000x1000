@@ -1,4 +1,4 @@
-# Proyectos a futuro
+﻿# Proyectos a futuro
 
 > Ideas y mejoras planificadas para continuar el desarrollo de la máquina.  
 > Algunas son sencillas de implementar; otras son proyectos completos en sí mismos.
@@ -74,14 +74,14 @@ Para que la máquina pueda ser usada oficialmente en cualquier centro educativo 
 Traducir toda la documentación al catalán (para uso local) y al inglés (para que otros proyectos internacionales puedan replicar la máquina).
 
 ### Render 3D explodido de la máquina
-Crear un render con vista explosionada de todos los componentes para que sea fácil entender el ensamblaje sin tener la máquina delante. Pendiente cuando Sergio suba los archivos STEP del marco.
+Crear un render con vista explosionada de todos los componentes para que sea fácil entender el ensamblaje sin tener la máquina delante. Pendiente cuando se suban los archivos STEP del marco.
 
 ---
 
 ## Pendientes inmediatos
 
 - [ ] Instalar 4 × camas calefactadas 500×500mm en paralelo
-- [ ] Subir archivos STL y STEP de piezas impresas (Sergio)
-- [ ] Subir planos del marco en PDF (Sergio)
+- [ ] Subir archivos STL y STEP de piezas impresas
+- [ ] Subir planos del marco en PDF
 - [ ] Calibración final: PID cama, Z offset definitivo con `PROBE_CALIBRATE`
 - [ ] Probar y validar macro de power-loss recovery
