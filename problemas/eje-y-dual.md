@@ -49,7 +49,7 @@ dir_pin: PG3
 enable_pin: !PG5
 microsteps: 16
 rotation_distance: 40
-endstop_pin: ^PG9
+endstop_pin: ^!PF6
 position_endstop: 0
 position_max: 1000
 homing_speed: 50
